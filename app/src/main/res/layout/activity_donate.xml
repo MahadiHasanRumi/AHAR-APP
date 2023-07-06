@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Donate">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feed The Hunger"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/custom_border"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/addProductChoosePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/custom_color"
+            android:onClick="signUpPictureChoosingButton"
+            android:text="food picture"
+            android:background="@drawable/custom_border"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/donateQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:background="@drawable/custom_border"
+        android:padding="16dp"
+        android:hint="Enter Quantity"
+        />
+
+    <EditText
+        android:id="@+id/donateLocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/custom_border"
+        android:padding="16dp"
+        android:hint="Enter Location Name"
+         />
+
+    <EditText
+        android:id="@+id/donateLocationLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/custom_border"
+        android:padding="16dp"
+        android:hint="Enter Location Link" />
+    <ProgressBar
+        android:id="@+id/addProductProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/donatePostButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:backgroundTint="@color/custom_color"
+        android:text="Post" />
+
+
+</LinearLayout>

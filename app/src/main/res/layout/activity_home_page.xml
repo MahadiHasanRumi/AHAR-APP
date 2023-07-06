@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi User"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/custom_color"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+         />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ahar"
+        />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center">-->
+        <Button
+            android:layout_marginTop="24dp"
+            android:id="@+id/buttonDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:backgroundTint="@color/custom_color"
+            android:background="@drawable/custom_border"
+            android:text="Donate" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:id="@+id/buttonActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@drawable/custom_border"
+            android:backgroundTint="@color/custom_color"
+            android:text="Activity" />
+
+
+<!--    </LinearLayout>-->
+</LinearLayout>

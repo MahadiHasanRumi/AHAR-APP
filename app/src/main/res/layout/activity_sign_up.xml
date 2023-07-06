@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/ahar" />
+
+    <EditText
+        android:id="@+id/signUpName"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:padding="16dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/custom_color"
+        android:textColor="@color/black"
+        android:hint="Enter Name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/signUpPassword"
+        android:hint="Enter Password"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/custom_color"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:padding="16dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:background="@drawable/custom_border"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/custom_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up" />
+
+</LinearLayout>
